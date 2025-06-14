@@ -3,27 +3,34 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 80vw;
+    width: 100vw;
     height: 80px;
-    padding: 1rem 10vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     animation: slide-from-top 0.3s ease-out;
 }
 
-.navbar-container-l {
+.navbar-section-l {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 1rem;
+    padding-left: 10vw;
     gap: 4rem;
 }
 
-.navbar-container-r {
+.navbar-section-r {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 1rem;
+    padding-right: 10vw;
     gap: 4rem;
+}
+
+.navbar-mobile {
+    display: none;
 }
 
 .navbar-link {
@@ -51,5 +58,71 @@
     100% {
         opacity: 100%;
         translate: 0% 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-container {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        width: 90vw;
+        height: 80px;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5vw;
+        padding-top: 5vw;
+        animation: slide-from-top 0.3s ease-out;
+    }
+
+    .navbar-link {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 844px) {
+    .navbar-container {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        width: 90vw;
+        height: 80px;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5vw;
+        padding-top: 5vw;
+        animation: slide-from-top 0.3s ease-out;
+    }
+
+    .navbar-link {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 845px) and (max-width: 1024px) {
+    .navbar-container {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        width: 90vw;
+        height: 80px;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5vw;
+        padding-top: 5vw;
+        animation: slide-from-top 0.3s ease-out;
+    }
+
+    .navbar-link {
+        font-size: 24px;
     }
 }
