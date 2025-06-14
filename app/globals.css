@@ -708,8 +708,7 @@ p {
     .card.gallery {
         min-width: 50vw;
         width: 100%;
-        min-height: fit-content;
-        max-height: 70vh;
+        height: auto;
     }
 
     .gallery-image {
@@ -817,8 +816,7 @@ p {
     .card.gallery {
         min-width: 50vw;
         width: 100%;
-        min-height: fit-content;
-        max-height: 70vh;
+        height: auto;
     }
 
     .gallery-image {
