@@ -701,15 +701,15 @@ p {
         align-items: center;
     }
 
+    .card-header {
+        font-size: 16px;
+    }
+
     .card.gallery {
         min-width: 50vw;
         width: 100%;
         min-height: fit-content;
         max-height: 70vh;
-    }
-
-    .card-header {
-        font-size: 16px;
     }
 
     .gallery-image {
@@ -780,7 +780,7 @@ p {
     .card.gallery {
         min-width: 50vw;
         width: 100%;
-        min-height: fit-content;
+        height: auto;
         max-height: 70vh;
     }
 
