@@ -14,8 +14,47 @@ export default function Interests() {
             }
         };
 
+        const handleScroll = () => {
+            const topButton = document.getElementById('topButton');
+            if (window.innerWidth < 1920 && topButton) {
+                topButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+            }
+        };
+
+        const handleResize = () => {
+            const topButton = document.getElementById('topButton');
+            if (topButton) {
+                if (window.innerWidth >= 1920) {
+                    topButton.style.display = 'none';
+                } else if (window.scrollY > 300) {
+                    topButton.style.display = 'block';
+                }
+            }
+        };
+
+        const init = () => {
+            const topButton = document.getElementById('topButton');
+            if (topButton) {
+                if (window.innerWidth >= 1920) {
+                    topButton.style.display = 'none';
+                }
+                topButton.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', handleResize);
+        };
+
         window.addEventListener('mousemove', handleMouseMove);
-        return () => window.removeEventListener('mousemove', handleMouseMove);
+        setTimeout(init, 0);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
@@ -173,6 +212,7 @@ export default function Interests() {
                     </div>
                 </div>
             </div>
+            <button id="topButton" title="Back to Top">↑</button>
         </>
     );
 }

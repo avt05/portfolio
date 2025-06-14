@@ -445,6 +445,36 @@ p {
     height: 5vh;
 }
 
+#topButton {
+    display: none;
+    position: fixed;
+    font-family: var(--font-archivo);
+    background-color: var(--blue-glow);
+    font-size: 24px;
+    font-weight: 800;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    color: var(--light);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    transition: ease all 0.15s;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+  
+#topButton:focus, #topButton:focus-visible, #topButton:active {
+    outline: none;
+    box-shadow: none;
+} 
+
+#topButton:hover {
+    background-color: var(--blue);
+}
+
 .spotlight-overlay {
     position: fixed;
     inset: 0;
@@ -617,10 +647,6 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .mobile-name {
-        display: block;
     }
 
     .desktop-header {
