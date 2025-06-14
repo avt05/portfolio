@@ -363,6 +363,7 @@ p {
     display: inline-block;
     max-width: 30vw;
     height: 30vh;
+    max-height: fit-content;
     object-fit: contain;
     border-radius: 5px;
     border-style: solid;
