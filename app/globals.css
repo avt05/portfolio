@@ -390,10 +390,6 @@ p {
     transition: 0.3s ease all;
 }
 
-.marquee-content:hover {
-    animation-play-state: paused;
-}
-
 .marquee-group {
     display: flex;
     color: var(--medium);
