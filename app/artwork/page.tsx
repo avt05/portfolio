@@ -72,6 +72,10 @@ export default function Interests() {
                     <div className="spacer"/>
                     <div className="gallery-grid">
                         <div className="card gallery">
+                            <img src="/images/gallery/grassy.png" className="gallery-image" alt="Grassy"/>
+                            <div className="card-header">Grassy Plateaus<span className="card-date">JUL 2025</span></div>
+                        </div>
+                        <div className="card gallery">
                             <img src="/images/gallery/kelp.png" className="gallery-image" alt="Kelp"/>
                             <div className="card-header">Kelp Forest<span className="card-date">SEP 2022</span></div>
                         </div>
@@ -88,8 +92,8 @@ export default function Interests() {
                             <div className="card-header">Piglin Brute<span className="card-date">FEB 2024</span></div>
                         </div>
                         <div className="card gallery">
-                            <img src="/images/gallery/train.png" className="gallery-image" alt="Train"/>
-                            <div className="card-header">Train<span className="card-date">FEB 2024</span></div>
+                            <img src="/images/gallery/lead.png" className="gallery-image" alt="Lead"/>
+                            <div className="card-header">Stargazing<span className="card-date">SEP 2025</span></div>
                         </div>
                         <div className="card gallery">
                             <img src="/images/gallery/five.png" className="gallery-image" alt="five"/>
