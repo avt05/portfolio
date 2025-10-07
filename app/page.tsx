@@ -65,10 +65,10 @@ export default function Home() {
                     <div className="body-grid">
                         <a href="https://github.com/cfgtexas25/Team-41" target="_blank" className="card">
                             <img src="images/bha.svg" className="card-image" draggable="false" alt="Black Heart Association"/>
-                            <div className="card-header">Digital News Assistant<span className="card-date">AUG 2024 – NOV 2024</span></div>
+                            <div className="card-header">Digital News Assistant<span className="card-date">OCT 2025</span></div>
                             <div className="card-body">Dashboard for internal team to improve operations at cardiovascular-health nonprofit
-                            organization. Includes AI-summaries of the latest pertinent policy changes in healthcare, data-driven analytics, 
-                            and interface for client communication and management. Developed at JPMorganChase Code for Good 2025 for the 
+                            organization. Scrapes news for latest policy changes in healthcare, using AI to provide fast summaries. Also includes 
+                            customer analytics and interface for client management. Developed at JPMorganChase Code for Good 2025 for the 
                             Black Heart Association.</div>
                             <div className="card-row">
                                 <div className="card-tech">Flask</div>
