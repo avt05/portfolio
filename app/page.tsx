@@ -74,7 +74,6 @@ export default function Home() {
                             <div className="card-row">
                                 <div className="card-tech">Flask</div>
                                 <div className="card-tech">Python</div>
-                                <div className="card-tech">React</div>
                                 <div className="card-tech">NewsAPI</div>
                                 <div className="card-tech">BART</div>
                             </div>
