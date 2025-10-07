@@ -63,67 +63,71 @@ export default function Home() {
                     <div className="spacer"/>
                     <h2 className="gradient-text" id="projects">Featured Projects</h2>
                     <div className="body-grid">
-                        <a href="https://github.com/cfgtexas25/Team-41" target="_blank" className="card">
-                            <img src="images/bha.svg" className="card-image" draggable="false" alt="Black Heart Association"/>
-                            <div className="card-header">Digital News Assistant<span className="card-date">OCT 2025</span></div>
-                            <div className="card-body">
-                            Dashboard designed for internal team at the Black Heart Association. 
-                            Scrapes news in healthcare policy, provides AI-driven summaries, visualizes customer analytics, 
-                            and includes interactive dashboard for client management.
-                            </div>
-                            <div className="card-row">
-                                <div className="card-tech">Flask</div>
-                                <div className="card-tech">Python</div>
-                                <div className="card-tech">NewsAPI</div>
-                                <div className="card-tech">BART</div>
-                            </div>
-                        </a>
-                        <a href="https://github.com/acm-projects/TalentTrade" target="_blank" className="card">
-                            <img src="images/talenttrade.svg" className="card-image" draggable="false" alt="TalentTrade"/>
-                            <div className="card-header">TalentTrade<span className="card-date">AUG 2024 – NOV 2024</span></div>
-                            <div className="card-body">
-                            Online learning web app to connect with university students. 
-                            Features profile customization, Zoom-integrated video lessons, and a robust 
-                            AI-powered search engine to find other users.
-                            </div>
-                            <div className="card-row">
-                                <div className="card-tech">MongoDB</div>
-                                <div className="card-tech">Express</div>
-                                <div className="card-tech">React</div>
-                                <div className="card-tech">Node.js</div>
-                                <div className="card-tech">Firebase</div>
-                                <div className="card-tech">OpenAI</div>
-                                <div className="card-tech">Zoom APIs</div>
-                            </div>
-                        </a>
-                        <a href="https://github.com/danielnguywn/HackUTD" target="_blank" className="card">
-                            <img src="images/earnnest.png" className="card-image" draggable="false" alt="EarnNest"/>
-                            <div className="card-header">EarnNest <span className="card-date">NOV 2024</span></div>
-                            <div className="card-body">
-                            Banking web app that allows underbanked users to access traditional 
-                            banking services. The app includes a real-time finance tracker that can scan receipts, as well 
-                            as an AI chat bot for user-catered financial advising.
-                            </div>
-                            <div className="card-row">
-                                <div className="card-tech">SambaNova API</div>
-                                <div className="card-tech">Google Cloud OCR</div>
-                            </div>
-                        </a>
-                        <a href="https://github.com/elijahtwalker/AeroVista" target="_blank" className="card">
-                            <img src="images/aerovista.png" className="card-image" draggable="false" alt="AeroVista"/>
-                            <div className="card-header">AeroVista <span className="card-date">MAR 2024 - MAY 2024</span></div>
-                            <div className="card-body">
-                            Research on Tello drones and applications in search-and-rescue 
-                            operations. Compared strengths and weaknesses of Mask R-CNNN and RTMDet object detection models.
-                            </div>
-                            <div className="card-row">
-                                <div className="card-tech">Mask R-CNN</div>
-                                <div className="card-tech">RTMDet</div>
-                                <div className="card-tech">DJITelloPy</div>
-                                <div className="card-tech">OpenCV</div>
-                                <div className="card-tech">Voxel51</div>
-                            </div>
-                        </a>
+                        <div className="card-pair">
+                            <a href="https://github.com/cfgtexas25/Team-41" target="_blank" className="card">
+                                <img src="images/bha.svg" className="card-image" draggable="false" alt="Black Heart Association"/>
+                                <div className="card-header">Digital News Assistant<span className="card-date">OCT 2025</span></div>
+                                <div className="card-body">
+                                Dashboard designed for internal team at the Black Heart Association. 
+                                Scrapes news in healthcare policy, provides AI-driven summaries, visualizes customer analytics, 
+                                and includes interactive dashboard for client management.
+                                </div>
+                                <div className="card-row">
+                                    <div className="card-tech">Flask</div>
+                                    <div className="card-tech">Python</div>
+                                    <div className="card-tech">NewsAPI</div>
+                                    <div className="card-tech">BART</div>
+                                </div>
+                            </a>
+                            <a href="https://github.com/acm-projects/TalentTrade" target="_blank" className="card">
+                                <img src="images/talenttrade.svg" className="card-image" draggable="false" alt="TalentTrade"/>
+                                <div className="card-header">TalentTrade<span className="card-date">AUG 2024 – NOV 2024</span></div>
+                                <div className="card-body">
+                                Online learning web app to connect with university students. 
+                                Features profile customization, Zoom-integrated video lessons, and a robust 
+                                AI-powered search engine to find other users.
+                                </div>
+                                <div className="card-row">
+                                    <div className="card-tech">MongoDB</div>
+                                    <div className="card-tech">Express</div>
+                                    <div className="card-tech">React</div>
+                                    <div className="card-tech">Node.js</div>
+                                    <div className="card-tech">Firebase</div>
+                                    <div className="card-tech">OpenAI</div>
+                                    <div className="card-tech">Zoom APIs</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="card-pair">
+                            <a href="https://github.com/danielnguywn/HackUTD" target="_blank" className="card">
+                                <img src="images/earnnest.png" className="card-image" draggable="false" alt="EarnNest"/>
+                                <div className="card-header">EarnNest <span className="card-date">NOV 2024</span></div>
+                                <div className="card-body">
+                                Banking web app that allows underbanked users to access traditional 
+                                banking services. The app includes a real-time finance tracker that can scan receipts, as well 
+                                as an AI chat bot for user-catered financial advising.
+                                </div>
+                                <div className="card-row">
+                                    <div className="card-tech">SambaNova API</div>
+                                    <div className="card-tech">Google Cloud OCR</div>
+                                </div>
+                            </a>
+                            <a href="https://github.com/elijahtwalker/AeroVista" target="_blank" className="card">
+                                <img src="images/aerovista.png" className="card-image" draggable="false" alt="AeroVista"/>
+                                <div className="card-header">AeroVista <span className="card-date">MAR 2024 - MAY 2024</span></div>
+                                <div className="card-body">
+                                Research on Tello drones and applications in search-and-rescue 
+                                operations. Compared strengths and weaknesses of Mask R-CNNN and RTMDet object detection models.
+                                </div>
+                                <div className="card-row">
+                                    <div className="card-tech">Mask R-CNN</div>
+                                    <div className="card-tech">RTMDet</div>
+                                    <div className="card-tech">DJITelloPy</div>
+                                    <div className="card-tech">OpenCV</div>
+                                    <div className="card-tech">Voxel51</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div className="body-column">
                         <div className="marquee-container">
